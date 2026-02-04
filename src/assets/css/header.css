@@ -1,0 +1,10 @@
+.header{
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    padding: 30px;
+    margin: 10px;
+    border-color:rgb(255, 140, 0);
+    border-width:3px;
+    border-style : solid;
+ }

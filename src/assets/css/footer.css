@@ -1,0 +1,10 @@
+.footer{
+    background-color:darkslategray;
+    color : Black;
+    text-align:left;
+    padding:30px;
+    margin:10px;
+    border-color:rgb(231, 181, 120);
+    border-width:3px;
+    border-style :solid;
+}

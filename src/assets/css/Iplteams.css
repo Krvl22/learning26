@@ -1,0 +1,45 @@
+body {
+  background-color: #f2f2f2;
+}
+
+/* Title */
+.ipl-title {
+  text-align: center;
+  font-size: 36px;
+  margin: 30px 0;
+  color: #222;
+}
+
+/* Table container */
+.ipl-table {
+  width: 90%;
+  margin: auto;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Header */
+.ipl-table thead {
+  background-color: #212529;
+  color: white;
+}
+
+.ipl-table th,
+.ipl-table td {
+  padding: 16px;
+  border: 1px solid #dee2e6;
+}
+
+/* Row hover */
+.ipl-table tbody tr {
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.ipl-table tbody tr:hover {
+  transform: scale(1.01);
+  filter: brightness(1.15);
+  cursor: pointer;
+}
