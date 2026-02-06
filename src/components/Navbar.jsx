@@ -22,6 +22,8 @@ export const Navbar = () => {
 
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav mr-auto">
+
+          {/* Netflix Routes */}
           <li className="nav-item">
             <Link className="nav-link" to="/NetflixHome">Netflix Home</Link>
           </li>
@@ -49,6 +51,24 @@ export const Navbar = () => {
           <li className="nav-item">
             <Link className="nav-link" to="/register">Register</Link>
           </li>
+
+          {/* Demo Routes */}
+          <li className="nav-item">
+            <Link className="nav-link" to="/usestatedemo1">useState Demo 1</Link>
+          </li>
+
+          <li className="nav-item">
+            <Link className="nav-link" to="/usestatedemo2">useState Demo 2</Link>
+          </li>
+
+          <li className="nav-item">
+            <Link className="nav-link" to="/usestatedemo3">useState Demo 3</Link>
+          </li>
+
+          <li className="nav-item">
+            <Link className="nav-link" to="/fundemo1">Function Demo</Link>
+          </li>
+
         </ul>
       </div>
     </nav>

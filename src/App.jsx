@@ -1,4 +1,4 @@
-// import { useState } from 'react'
+//  import { useState } from 'react'
 // import { HeaderComponents } from './components/HeaderComponents';
 // import { FooterComponents } from './components/FooterComponents';
 // import ContantComponents from './components/ContantComponents';
@@ -12,21 +12,34 @@
 // import { MapDemo8 } from './components/MapDemo8';
 // import { MapDemo9 } from './components/MapDemo9';
 // import { MapDemo10 } from './components/MapDemo10';
+// import { Routes, Route } from "react-router-dom";
+// import { Iplteams } from "./components/Iplteams";
+// import { TeamDetails } from "./components/TeamDetails";
+
+
+
 
 import { Routes, Route } from "react-router-dom";
-import { Iplteams } from "./components/Iplteams";
-import { TeamDetails } from "./components/TeamDetails";
+import { Navbar } from "./components/Navbar";
+import { UseStateDemo1 } from "./components/UseStateDemo1";
+import { UseStateDemo2 } from "./components/UseStateDemo2";
+import { UseStateDemo3 } from "./components/UseStateDemo3";
+import { FunctionDemo1 } from "./components/FunctionDemo1";
 
 function App() {
   return (
     <div>
+      {/* Navbar must be OUTSIDE Routes */}
+      <Navbar />
+
       <Routes>
-        <Route path="/" element={<Iplteams />} />
-        <Route path="/team/:name" element={<TeamDetails />} />
+        <Route path="/usestatedemo1" element={<UseStateDemo1 />} />
+        <Route path="/usestatedemo2" element={<UseStateDemo2 />} />
+        <Route path="/usestatedemo3" element={<UseStateDemo3 />} />
+        <Route path="/fundemo1" element={<FunctionDemo1 />} />
       </Routes>
     </div>
   );
 }
 
 export default App;
-
