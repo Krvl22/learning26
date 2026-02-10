@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import { CardComponents } from './CardComponents'
 export const UseStateDemo1 = () => {
 
     //var count = 0;
@@ -20,6 +20,7 @@ export const UseStateDemo1 = () => {
         <h1>USE STATE DEMO 1</h1>
         <h1>Count = {count}</h1>
         <button onClick={increseCount}>+</button>
+        <CardComponents title ="USE STATE DEMO"></CardComponents>
     </div>
   )
 }

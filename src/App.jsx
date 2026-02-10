@@ -18,18 +18,19 @@
 
 
 
-
 import { Routes, Route } from "react-router-dom";
 import { Navbar } from "./components/Navbar";
 import { UseStateDemo1 } from "./components/UseStateDemo1";
 import { UseStateDemo2 } from "./components/UseStateDemo2";
 import { UseStateDemo3 } from "./components/UseStateDemo3";
 import { FunctionDemo1 } from "./components/FunctionDemo1";
+import { Employees } from "./components/Employees";
+import { InputDemo1 } from "./components/InputDemo1";
+import { Students } from "./components/Students";
 
 function App() {
   return (
     <div>
-      {/* Navbar must be OUTSIDE Routes */}
       <Navbar />
 
       <Routes>
@@ -37,6 +38,9 @@ function App() {
         <Route path="/usestatedemo2" element={<UseStateDemo2 />} />
         <Route path="/usestatedemo3" element={<UseStateDemo3 />} />
         <Route path="/fundemo1" element={<FunctionDemo1 />} />
+        <Route path="/employees" element={<Employees />} />
+        <Route path="/inputdemo1" element={<InputDemo1 />} />
+        <Route path="/students" element={<Students />} />
       </Routes>
     </div>
   );
