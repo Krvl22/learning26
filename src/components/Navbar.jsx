@@ -35,7 +35,7 @@ export const Navbar = () => {
           <li className="nav-item">
             <Link className="nav-link" to="/NetflixShows">Netflix Shows</Link>
           </li>
-
+{/* 
           <li className="nav-item">
             <Link className="nav-link" to="/history">History</Link>
           </li>
@@ -50,10 +50,10 @@ export const Navbar = () => {
 
           <li className="nav-item">
             <Link className="nav-link" to="/register">Register</Link>
-          </li>
+          </li> */}
 
           {/* Demo Routes */}
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <Link className="nav-link" to="/usestatedemo1">useState Demo 1</Link>
           </li>
 
@@ -67,11 +67,11 @@ export const Navbar = () => {
 
           <li className="nav-item">
             <Link className="nav-link" to="/fundemo1">Function Demo</Link>
-          </li>
+          </li>*/}
 
           <li class="nav-item">
               <Link class="nav-link" to="/employees">employees</Link>
-          </li>
+          </li> 
 
           <li class="nav-item">
               <Link class="nav-link" to="/inputdemo1">Input Demo 1</Link>
@@ -87,6 +87,12 @@ export const Navbar = () => {
           </li>
           <li class="nav-item">
               <Link class="nav-link" to="/formdemo3">Form Demo 3</Link>
+          </li>
+          <li class="nav-item">
+              <Link class="nav-link" to="/formdemo4">Form Demo 4</Link>
+          </li>
+          <li class="nav-item">
+              <Link class="nav-link" to="/formdemo5">Form Demo 5</Link>
           </li>
           <li class="nav-item">
               <Link class="nav-link" to="/formik">Formik</Link>

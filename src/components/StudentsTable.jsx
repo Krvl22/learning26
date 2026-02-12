@@ -36,7 +36,6 @@ export const StudentsTable = (props) => {
     <div style={{ textAlign: "center" }}>
       <h1>{props.title}</h1>
 
-      {/* College info (same idea as company in Employees) */}
       <h2>{props.college?.name}</h2>
       <h3>{props.college?.year}</h3>
 
