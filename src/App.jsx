@@ -27,6 +27,10 @@ import { FunctionDemo1 } from "./components/FunctionDemo1";
 import { Employees } from "./components/Employees";
 import { InputDemo1 } from "./components/InputDemo1";
 import { Students } from "./components/Students";
+import { FormDemo1 } from "./components/forms/FormDemo1";
+import { FormDemo2 } from "./components/forms/FormDemo2";
+import { FormDemo3 } from "./components/forms/FormDemo3";
+import { Formik } from "./components/forms/formik";
 
 function App() {
   return (
@@ -41,6 +45,10 @@ function App() {
         <Route path="/employees" element={<Employees />} />
         <Route path="/inputdemo1" element={<InputDemo1 />} />
         <Route path="/students" element={<Students />} />
+        <Route path="/formdemo1" element={<FormDemo1 />} />
+        <Route path="/formdemo2" element={<FormDemo2 />} />
+        <Route path="/formdemo3" element={<FormDemo3 />} />
+        <Route path="/formik" element={<Formik />}/>
       </Routes>
     </div>
   );
