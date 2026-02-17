@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useFormik } from "formik";
 
-export const Formik = () => {
+export const DependentDropdown = () => {
 
   const [states, setStates] = useState([]);
 
@@ -52,7 +52,7 @@ export const Formik = () => {
 
   return (
     <div style={{ textAlign: "center" }}>
-      <h1>Formik Job Application Form</h1>
+      <h1> Job Application Form</h1>
 
       <form onSubmit={formik.handleSubmit}>
 

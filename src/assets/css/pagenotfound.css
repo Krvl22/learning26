@@ -1,0 +1,44 @@
+.pnf-container {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  color: white;
+  text-align: center;
+}
+
+.pnf-title {
+  font-size: 120px;
+  font-weight: bold;
+  margin: 0;
+  color: #ff4c4c;
+}
+
+.pnf-subtitle {
+  font-size: 28px;
+  margin: 10px 0;
+}
+
+.pnf-text {
+  font-size: 18px;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+.pnf-button {
+  padding: 10px 20px;
+  background-color: #ff4c4c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.pnf-button:hover {
+  background-color: #e60000;
+  transform: scale(1.05);
+}

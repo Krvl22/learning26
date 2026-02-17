@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+}
+
+.navbar {
+  width: 100%;
+}
+
+/* Make navbar items scroll horizontally */
+.navbar-collapse {
+  overflow-x: auto;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-wrap: nowrap !important;   /* prevent wrapping */
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+
+/* Optional: small scrollbar */
+.navbar-nav::-webkit-scrollbar {
+  height: 5px;
+}

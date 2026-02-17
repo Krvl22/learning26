@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const MapDemo2 = () => {
+export const MapDemo3 = () => {
   var students = [
     { id: 1, name: "Krushang", age: 21, gender: "Male", marks: 80 },
     { id: 2, name: "Harsh", age: 22, gender: "Male", marks: 75 },

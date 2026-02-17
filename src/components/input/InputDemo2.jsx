@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export const InputDemo1 = () => {
+export const InputDemo2 = () => {
   const [name, setName] = useState("");
   const [age, setAge] = useState("");
   const [email, setEmail] = useState("");
@@ -15,7 +15,7 @@ export const InputDemo1 = () => {
 
 
   return (
-    <div style={{ padding: "20px" }}>
+    <div style={{padding: "20px" }}>
      
       <label>Name:</label>
       <input type="text"placeholder="Enter your name" value={name}onChange={(e) => setName(e.target.value)}/>
