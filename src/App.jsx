@@ -51,6 +51,11 @@ import { DependentDropdown } from "./components/forms/DependentDropdown";
 import { ApiDemo1 } from "./components/api/ApiDemo1";
 import { ApiDemo2 } from "./components/api/ApiDemo2";
 import { ApiDemo3 } from "./components/api/ApiDemo3";
+import { ApiDemo4 } from "./components/api/ApiDemo4";
+import { OmbdSearch } from "./components/api/OmbdSearch";
+import { OmbdSearch1 } from "./components/api/OmbdSearch1"
+import { MovieDetail } from "./components/api/MovieDetail"
+import { ApiPost } from "./components/api/ApiPost";
 
 function App() {
   return (
@@ -104,7 +109,13 @@ function App() {
         <Route path="/apidemo1" element={<ApiDemo1 />} />
         <Route path="/apidemo2" element={<ApiDemo2 />} />
         <Route path="/apidemo3" element={<ApiDemo3 />} />
-        
+        <Route path="/apidemo4" element={<ApiDemo4 />} />
+        <Route path="/ombdsearch" element={<OmbdSearch />} />
+        <Route path="/ombdsearch1" element={<OmbdSearch1 />} />
+        <Route path="/movie/:id" element={<MovieDetail />} />
+        <Route path="/apipost" element={<ApiPost />} />
+
+
         <Route path="*" element={<PageNotFound />} />
       </Routes>
     </div>

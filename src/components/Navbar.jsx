@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../assets/navbar.css";
+import "../assets/css/navbar.css";
 
 export const Navbar = () => {
   return (
@@ -29,7 +29,7 @@ export const Navbar = () => {
             <Link className="nav-link" to="/NetflixHome">Netflix Home</Link>
           </li>
 
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <Link className="nav-link" to="/NetflixMovies">Netflix Movies</Link>
           </li>
 
@@ -154,7 +154,7 @@ export const Navbar = () => {
           <li class="nav-item">
               <Link class="nav-link" to="/formdemo6">Form Demo 6</Link>
           </li>
-
+ */}
           <li class="nav-item">
               <Link class="nav-link" to="/dependentdropdown">Dependent Dropdown</Link>
           </li>
@@ -169,7 +169,24 @@ export const Navbar = () => {
 
           <li class="nav-item">
               <Link class="nav-link" to="/apidemo3">API Demo 3</Link>
-          </li>         
+          </li>
+
+          <li class="nav-item">
+              <Link class="nav-link" to="/apidemo4">API Demo 4</Link>
+          </li>
+
+          <li class="nav-item">
+              <Link class="nav-link" to="/ombdsearch">Ombd Search</Link>
+          </li>
+
+          <li class="nav-item">
+              <Link class="nav-link" to="/ombdsearch1">Ombd Search 1</Link>
+          </li>
+
+          <li class="nav-item">
+              <Link class="nav-link" to="/apipost">Api Post</Link>
+          </li> 
+
         </ul>
       </div>
     </nav>
