@@ -51,7 +51,7 @@ export const ApiPost = () => {
     try {
 
       const res = await axios.post(
-        "https://node5.onrender.com/user/user",   // ✅ THIS IS CORRECT
+        "https://node5.onrender.com/user/user",  
         userObj,
         {
           headers: {
@@ -69,7 +69,7 @@ export const ApiPost = () => {
       console.log("STATUS:", err.response?.status)
       console.log("DATA:", err.response?.data)
 
-      alert("Error while adding user ❌")
+      alert("Error while adding user ")
     }
   }
 

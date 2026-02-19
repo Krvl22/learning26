@@ -4,11 +4,13 @@ import { useForm } from "react-hook-form"
 
 export const ApiDemo4 = () => {
 
-  const { register, handleSubmit, reset } = useForm()
+  const { register, handleSubmit } = useForm()
 
   const submitHandler = async (data) => {
-
     try {
+
+      // convert string radio value to boolean
+      data.isActive = data.isActive === "true"
 
       const res = await axios.post(
         "https://node5.onrender.com/user/user",
@@ -17,7 +19,6 @@ export const ApiDemo4 = () => {
 
       console.log(res.data)
       alert("User Added Successfully ✅")
-      reset()
 
     } catch (err) {
       console.log(err.response)
@@ -51,15 +52,26 @@ export const ApiDemo4 = () => {
         <br /><br />
 
         <input
+          type="password"
           placeholder="Password"
           {...register("password")}
         />
         <br /><br />
 
-        <select {...register("isActive")}>
-          <option value="true">Active</option>
-          <option value="false">Inactive</option>
-        </select>
+        <label>Is Active:</label>
+        <br />
+
+        <input
+          type="radio"
+          value="true"
+          {...register("isActive")}
+        /> Active
+
+        <input
+          type="radio"
+          value="false"
+          {...register("isActive")}
+        /> Inactive
 
         <br /><br />
 
