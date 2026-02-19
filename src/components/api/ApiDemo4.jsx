@@ -32,46 +32,24 @@ export const ApiDemo4 = () => {
 
       <form onSubmit={handleSubmit(submitHandler)}>
 
-        <input
-          placeholder="Name"
-          {...register("name")}
-        />
+        <input placeholder="Name" {...register("name")}/>
         <br /><br />
 
-        <input
-          placeholder="Email"
-          {...register("email")}
-        />
+        <input placeholder="Email" {...register("email")}/>
         <br /><br />
 
-        <input
-          type="number"
-          placeholder="Age"
-          {...register("age")}
-        />
+        <input type="number" placeholder="Age" {...register("age")}/>
         <br /><br />
 
-        <input
-          type="password"
-          placeholder="Password"
-          {...register("password")}
-        />
+        <input type="password" placeholder="Password" {...register("password")}/>
         <br /><br />
 
         <label>Is Active:</label>
         <br />
 
-        <input
-          type="radio"
-          value="true"
-          {...register("isActive")}
-        /> Active
+        <input type="radio" value="true" {...register("isActive")}/> Active
 
-        <input
-          type="radio"
-          value="false"
-          {...register("isActive")}
-        /> Inactive
+        <input type="radio" value="false" {...register("isActive")}/> Inactive
 
         <br /><br />
 
